@@ -22,132 +22,138 @@
     <style>
        
 
-        .card-stepper {
-            z-index: 0
-        }
+      .card-stepper {
+          z-index: 0
+      }
 
-        #progressbar-2 {
-
-
-            color: #d6e3e9;
-        }
-
-        #progressbar-2 li {
-            list-style-type: none;
-            font-size: 13px;
-            width: 33.33%;
-            float: left;
-            position: relative;
-        }
-
-        #progressbar-2 #step1:before {
-            content: '\f058';
-            color: green;
-            width: 37px;
-            margin-left: 0px;
-            padding-left: 0px;
-        }
-
-        #progressbar-2 #step2:before {
-            content: '\f058';
-            color: green;
-            width: 37px;
-        }
-
-        #progressbar-2 #step3:before {
-            content: '\f058';
-            color: green;
-            width: 37px;
-            margin-right: 0;
-            text-align: center;
-        }
-
-        #progressbar-2 #step4:before {
-            content: '\f111';
-            color: transparent;
-            width: 37px;
-            margin-right: 0;
-            text-align: center;
-        }
-
-        #progressbar-2 li:before {
-            line-height: 37px;
-            display: block;
-            font-size: 12px;
-            background: #c5cae9;
-            border-radius: 50%;
-        }
-
-        #progressbar-2 li:after {
-            content: '';
-            width: 100%;
-            height: 10px;
-            background: #0370ff;
-            position: absolute;
-            left: 0%;
-            right: 0%;
-            top: 15px;
-            z-index: -1;
-        }
-
-        #progressbar-2 li:nth-child(1):after {
-            left: 1%;
-            width: 100%
-        }
-
-        #progressbar-2 li:nth-child(2):after {
-            left: 1%;
-            width: 100%;
-        }
-
-        #progressbar-2 li:nth-child(3):after {
-            left: 1%;
-            width: 100%;
-            background: orangered !important;
-        }
-
-        #progressbar-2 li:nth-child(4) {
-            left: 0;
-            width: 37px;
-        }
-
-        #progressbar-2 li:nth-child(4):after {
-            left: 0;
-            width: 0;
-        }
-
-        #progressbar-2 li.active:before,
-        #progressbar-2 li.active:after {
-            background: green;
-        }
+      #progressbar-2 {
 
 
-        .card-stepper .bx {
-            font-size: 3rem;
-        }
+          color: #d6e3e9;
+      }
+
+      #progressbar-2 li {
+          list-style-type: none;
+          font-size: 13px;
+          width: 33.33%;
+          float: left;
+          position: relative;
+      }
+
+      #progressbar-2 #step1:before {
+          content: '\f058';
+          color: green;
+          width: 37px;
+          margin-left: 0px;
+          padding-left: 0px;
+      }
+
+      #progressbar-2 #step2:before {
+          content: '\f058';
+          color: green;
+          width: 37px;
+      }
+
+      #progressbar-2 #step3:before {
+          content: '\f058';
+          color: green;
+          width: 37px;
+          margin-right: 0;
+          text-align: center;
+      }
+
+      #progressbar-2 #step4:before {
+          content: '\f111';
+          color: transparent;
+          width: 37px;
+          margin-right: 0;
+          text-align: center;
+      }
+
+      #progressbar-2 li:before {
+          line-height: 37px;
+          display: block;
+          font-size: 12px;
+          background: #c5cae9;
+          border-radius: 50%;
+      }
+
+      #progressbar-2 li:after {
+          content: '';
+          width: 100%;
+          height: 10px;
+          background: #0370ff;
+          position: absolute;
+          left: 0%;
+          right: 0%;
+          top: 15px;
+          z-index: -1;
+      }
+
+      #progressbar-2 li:nth-child(1):after {
+          left: 1%;
+          width: 100%
+      }
+
+      #progressbar-2 li:nth-child(2):after {
+          left: 1%;
+          width: 100%;
+      }
+
+      #progressbar-2 li:nth-child(3):after {
+          left: 1%;
+          width: 100%;
+          background: orangered !important;
+      }
+
+      #progressbar-2 li:nth-child(4) {
+          left: 0;
+          width: 37px;
+      }
+
+      #progressbar-2 li:nth-child(4):after {
+          left: 0;
+          width: 0;
+      }
+
+      #progressbar-2 li.active:before,
+      #progressbar-2 li.active:after {
+          background: green;
+      }
+
+
+      .card-stepper .bx {
+          font-size: 3rem;
+      }
 
 
 
-        .pay-btn {
-            background-color: hsl(120, 100%, 25%);
-            color: #ffffff;
-        }
+      .pay-btn {
+          background-color: hsl(120, 100%, 25%);
+          color: #ffffff;
+      }
 
-        .enquiry-btn {
-            color: #ffffff;
-            background-color: orangered;
-        }
+      .enquiry-btn {
+          color: #ffffff;
+          background-color: orangered;
+      }
 
-        .pay-btn:hover {
-            background-color: hsl(120, 100%, 25%);
-            color: #ffffff;
-        }
+      .pay-btn:hover {
+          background-color: hsl(120, 100%, 25%);
+          color: #ffffff;
+      }
 
-        .enquiry-btn:hover {
-            color: #c5cae9;
-            background-color: orangered;
-        }
-    </style>
+      .enquiry-btn:hover {
+          color: #c5cae9;
+          background-color: orangered;
+      }
+
+      .form-control:focus {
+          outline: none;
+          border-color: rgb(255, 102, 0);
+          box-shadow: 0 0 0 0.2rem rgba(255, 123, 0, 0);
+      }
+  </style>
 
   </head>
   <body class="body">
@@ -401,150 +407,301 @@
     </header>
     
     <main class="container-fluid py-5 sec">
-            <div class="container py-5"">
-        <div class="row justify-content-center mb-3">
-            <div class="col-md-12 col-xl-10">
-                <div class="card shadow-0 border rounded-3">
-                    <div class="card-body"  style="border: 1px solid orangered; border-radius: 20px;">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
-                                <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                                    <img src="shoe1.1.jpg" class="w-100" style="border-radius: 20px;" />
-                                    <a href="#!">
-                                        <div class="hover-overlay">
-                                            <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);">
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-6 col-xl-6">
-                                <h5> BRUTON Stylish Sneakers Casual Shoes for Men's &
-                                    Boy's</h5>
-                                <div class="d-flex flex-row">
-                                    <div class="text-danger mb-1 me-2">
-                                        <i class='bx bxs-star bx-tada' style='color:#f8ff04'></i>
-                                        <i class='bx bxs-star' style='color:#f8ff04'></i>
-                                        <i class='bx bxs-star' style='color:#f8ff04'></i>
-                                        <i class='bx bxs-star' style='color:#f8ff04'></i>
-                                        <i class='bx bxs-star' style='color:#f8ff04'></i>
+           <!-- current orders -->
+
+    <div class="container py-5"">
+     
+      <div class="row justify-content-center mb-3">
+          <h1>Current Orders</h1>
+          <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                  <div class="card-body"  style="border: 1px solid orangered; border-radius: 20px;">
+                      <div class="row">
+                          <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                              <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                  <img src="shoe1.1.jpg" class="w-100" style="border-radius: 20px;" />
+                                  <a href="#!">
+                                      <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);">
+                                          </div>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-lg-6 col-xl-6">
+                              <h5> BRUTON Stylish Sneakers Casual Shoes for Men's &
+                                  Boy's</h5>
+                              <div class="d-flex flex-row">
+                                  <div class="text-danger mb-1 me-2">
+                                      <i class='bx bxs-star bx-tada' style='color:#f8ff04'></i>
+                                      <i class='bx bxs-star' style='color:#f8ff04'></i>
+                                      <i class='bx bxs-star' style='color:#f8ff04'></i>
+                                      <i class='bx bxs-star' style='color:#f8ff04'></i>
+                                      <i class='bx bxs-star' style='color:#f8ff04'></i>
+                                  </div>
+                                  <span>49 ratings</span>
+                              </div>
+                              <div class="mt-1 mb-0 text-muted small">
+                                  <span>Size:9</span>
+                                  <span class="text-primary"> • </span>
+                                  <span>Light weight</span>
+                                  <span class="text-primary"> • </span>
+                                  <span>Color:yellow<br /></span>
+                              </div>
+                              <div class="mb-2 text-muted small">
+                                  <span>Unique design</span>
+                                  <span class="text-primary"> • </span>
+                                  <span>For men</span>
+                                  <span class="text-primary"> • </span>
+                                  <span>Casual<br /></span>
+                              </div>
+
+
+
+                          </div>
+                          <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                              <div class="d-flex flex-row align-items-center mb-1">
+                                  <h4 class="mb-1 me-1">466₹</h4>
+                                  <span class="text-danger"><s>1500₹</s></span>
+                              </div>
+                              <h6 class="text-success">Free shipping</h6>
+                              <div class="d-flex flex-column mt-4">
+                                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-sm pay-btn"
+                                      type="button">Pay Now</button>
+                                  <button data-mdb-button-init data-mdb-ripple-init class="btn  btn-sm mt-2 enquiry-btn "
+                                      type="button">
+                                      Enquiry
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+
+
+<!-- order tracking -->
+
+  <div class="container py-5 h-100 ">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+      
+          <div class="col-12">
+              <div class="card card-stepper" style="border-radius: 16px;">
+
+                  <div class="card-body p-5">
+
+                      <div class="d-flex justify-content-between align-items-center mb-5">
+                          <div>
+                              <h5 class="mb-0">Order ID <span class="text-success font-weight-bold">#Y34XDHR</span>
+                              </h5>
+                          </div>
+                          <div class="text-end">
+                              <p class="mb-0">Expected Arrival <span>01/12/19</span></p>
+
+                          </div>
+                      </div>
+
+                      <ul id="progressbar-2" class="d-flex justify-content-between mx-0 mt-0 mb-5 px-0 pt-0 pb-2">
+                          <li class="step0 active text-center" id="step1"></li>
+                          <li class="step0 active text-center" id="step2"></li>
+                          <li class="step0 active text-center" id="step3"></li>
+                          <li class="step0 text-muted text-end" id="step4"></li>
+                      </ul>
+
+                      <div class="d-flex justify-content-between">
+                          <div class="d-lg-flex align-items-center">
+                              <lord-icon src="https://cdn.lordicon.com/vwzukuhn.json" trigger="hover" stroke="light"
+                                  colors="primary:#16c72e,secondary:#df3826,tertiary:#109121,quaternary:#ffffff"
+                                  style="width:75px;height:75px">
+                              </lord-icon>
+                              <div>
+                                  <p class="fw-bold mb-1">Order</p>
+                                  <p class="fw-bold mb-0">Processed</p>
+                              </div>
+                          </div>
+                          <div class="d-lg-flex align-items-center">
+                              <lord-icon src="https://cdn.lordicon.com/yhghdklb.json" trigger="hover" stroke="light"
+                                  colors="primary:#000000,secondary:#ffffff,tertiary:#df3826,quaternary:#109121"
+                                  style="width:75px;height:75px">
+                              </lord-icon>
+                              <div>
+                                  <p class="fw-bold mb-1">Order</p>
+                                  <p class="fw-bold mb-0">Shipped</p>
+                              </div>
+                          </div>
+                          <div class="d-lg-flex align-items-center">
+                              <lord-icon src="https://cdn.lordicon.com/zzjjvkam.json" trigger="hover"
+                                  colors="primary:#109121,secondary:#df3826" style="width:75px;height:75px">
+                              </lord-icon>
+                              <div>
+                                  <p class="fw-bold mb-1">Order</p>
+                                  <p class="fw-bold mb-0">En Route</p>
+                              </div>
+                          </div>
+                          <div class="d-lg-flex align-items-center">
+                              <lord-icon src="https://cdn.lordicon.com/pgirtdfe.json" trigger="hover" stroke="light"
+                                  colors="primary:#000000,secondary:#df3826,tertiary:#df3826,quaternary:#df3826,quinary:#df3826,senary:#646e78,septenary:#0a5c15"
+                                  style="width:75px;height:75px">
+                              </lord-icon>
+                              <div>
+                                  <p class="fw-bold mb-1">Order</p>
+                                  <p class="fw-bold mb-0">Arrived</p>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  
+<!-- recived orders -->
+
+  <div class="container py-5"">
+   
+      <div class="row justify-content-center mb-3">
+          <h1>Recived orders</h1>
+          <div class="col-md-12 col-xl-10">
+              <div class="card shadow-0 border rounded-3">
+                  <div class="card-body"  style="border: 1px solid orangered; border-radius: 20px;">
+                      <div class="row">
+                          <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                              <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                  <img src="hammer.jpg" class="w-100" style="border-radius: 20px;" />
+                                  <a href="#!">
+                                      <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);">
+                                          </div>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-lg-6 col-xl-6">
+                              <h5> BRUTON Stylish Sneakers Casual Shoes for Men's &
+                                  Boy's</h5>
+                              <div class="d-flex flex-row">
+                                  <div class="text-danger mb-1 me-2">
+                                      <i class='bx bxs-star bx-tada' style='color:#f8ff04'></i>
+                                      <i class='bx bxs-star' style='color:#f8ff04'></i>
+                                      <i class='bx bxs-star' style='color:#f8ff04'></i>
+                                      <i class='bx bxs-star' style='color:#f8ff04'></i>
+                                      <i class='bx bxs-star' style='color:#f8ff04'></i>
+                                  </div>
+                                  <span>49 ratings</span>
+                              </div>
+                              <div class="mt-1 mb-0 text-muted small">
+                                  <span>Size:9</span>
+                                  <span class="text-primary"> • </span>
+                                  <span>Light weight</span>
+                                  <span class="text-primary"> • </span>
+                                  <span>Color:yellow<br /></span>
+                              </div>
+                              <div class="mb-2 text-muted small">
+                                  <span>Unique design</span>
+                                  <span class="text-primary"> • </span>
+                                  <span>For men</span>
+                                  <span class="text-primary"> • </span>
+                                  <span>Casual<br /></span>
+                              </div>
+
+                              <div class="feedback-container mb-2 text-muted small" style="border: 2px solid rgba(255, 68, 0, 0.479);border-radius: 20px;padding: 5px;">
+                                  <span style=" color: black;">Rate this product:<i class='bx bx-star bx-tada' style='color:#f8ff04' id="star-change" onclick="fill(this)"></i>
+                                      <i class='bx bx-star' style='color:#f8ff04'id="star-change" onclick="fill(this)"></i>
+                                      <i class='bx bx-star' style='color:#f8ff04'id="star-change" onclick="fill(this)"></i>
+                                      <i class='bx bx-star' style='color:#f8ff04'id="star-change" onclick="fill(this)"></i>
+                                      <i class='bx bx-star' style='color:#f8ff04'id="star-change" onclick="fill(this)"></i>
+                                   </span>
+
+                                   <div class="form-floating mb-3">
+                                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="border: none !important;"></textarea>
+                                      <label for="floatingTextarea">Feedback</label>
                                     </div>
-                                    <span>49 ratings</span>
-                                </div>
-                                <div class="mt-1 mb-0 text-muted small">
-                                    <span>Size:9</span>
-                                    <span class="text-primary"> • </span>
-                                    <span>Light weight</span>
-                                    <span class="text-primary"> • </span>
-                                    <span>Color:yellow<br /></span>
-                                </div>
-                                <div class="mb-2 text-muted small">
-                                    <span>Unique design</span>
-                                    <span class="text-primary"> • </span>
-                                    <span>For men</span>
-                                    <span class="text-primary"> • </span>
-                                    <span>Casual<br /></span>
-                                </div>
+                              </div>
 
 
 
-                            </div>
-                            <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
-                                <div class="d-flex flex-row align-items-center mb-1">
-                                    <h4 class="mb-1 me-1">466₹</h4>
-                                    <span class="text-danger"><s>1500₹</s></span>
-                                </div>
-                                <h6 class="text-success">Free shipping</h6>
-                                <div class="d-flex flex-column mt-4">
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-sm pay-btn"
-                                        type="button">Pay Now</button>
-                                    <button data-mdb-button-init data-mdb-ripple-init class="btn  btn-sm mt-2 enquiry-btn "
-                                        type="button">
-                                        Enquiry
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                              <div class="d-flex flex-row align-items-center mb-1">
+                                  <h4 class="mb-1 me-1">466₹</h4>
+                                  <span class="text-danger"><s>1500₹</s></span>
+                              </div>
+                              <h6 class="text-success">Free shipping</h6>
+                              <div class="d-flex flex-column mt-4">
+                                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-sm pay-btn"
+                                      type="button">Buy Again</button>
+                                  <button data-mdb-button-init data-mdb-ripple-init class="btn  btn-sm mt-2 enquiry-btn "
+                                      type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                     Details
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" >
+        <div class="modal-content" style="border: 2px solid orangered;">
+          <div class="modal-header " style="text-align: center;">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" ">Feedback form</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="background-color: rgb(255, 255, 255);">
+           <h4 style="padding: 20px; color: black;">Rate this product:<i class='bx bx-star bx-tada' style='color:#f8ff04' id="star-change" onclick="fill(this)"></i>
+              <i class='bx bx-star' style='color:#f8ff04'id="star-change" onclick="fill(this)"></i>
+              <i class='bx bx-star' style='color:#f8ff04'id="star-change" onclick="fill(this)"></i>
+              <i class='bx bx-star' style='color:#f8ff04'id="star-change" onclick="fill(this)"></i>
+              <i class='bx bx-star' style='color:#f8ff04'id="star-change" onclick="fill(this)"></i>
+           </h4>
+
+           <div class="form-floating">
+            
+             
             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn " style="background-color: orangered; color: aliceblue;" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn" style="background-color: green; color: aliceblue;">Submit</button>
+          </div>
         </div>
-
+      </div>
     </div>
 
-    <div class="container py-5 h-100 w-80">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12">
-                <div class="card card-stepper" style="border-radius: 16px;">
+  <!-- Feedback -->
 
-                    <div class="card-body p-5">
-
-                        <div class="d-flex justify-content-between align-items-center mb-5">
-                            <div>
-                                <h5 class="mb-0">Order ID <span class="text-success font-weight-bold">#Y34XDHR</span>
-                                </h5>
-                            </div>
-                            <div class="text-end">
-                                <p class="mb-0">Expected Arrival <span>01/12/19</span></p>
-
-                            </div>
-                        </div>
-
-                        <ul id="progressbar-2" class="d-flex justify-content-between mx-0 mt-0 mb-5 px-0 pt-0 pb-2">
-                            <li class="step0 active text-center" id="step1"></li>
-                            <li class="step0 active text-center" id="step2"></li>
-                            <li class="step0 active text-center" id="step3"></li>
-                            <li class="step0 text-muted text-end" id="step4"></li>
-                        </ul>
-
-                        <div class="d-flex justify-content-between">
-                            <div class="d-lg-flex align-items-center">
-                                <lord-icon src="https://cdn.lordicon.com/vwzukuhn.json" trigger="hover" stroke="light"
-                                    colors="primary:#16c72e,secondary:#df3826,tertiary:#109121,quaternary:#ffffff"
-                                    style="width:75px;height:75px">
-                                </lord-icon>
-                                <div>
-                                    <p class="fw-bold mb-1">Order</p>
-                                    <p class="fw-bold mb-0">Processed</p>
-                                </div>
-                            </div>
-                            <div class="d-lg-flex align-items-center">
-                                <lord-icon src="https://cdn.lordicon.com/yhghdklb.json" trigger="hover" stroke="light"
-                                    colors="primary:#000000,secondary:#ffffff,tertiary:#df3826,quaternary:#109121"
-                                    style="width:75px;height:75px">
-                                </lord-icon>
-                                <div>
-                                    <p class="fw-bold mb-1">Order</p>
-                                    <p class="fw-bold mb-0">Shipped</p>
-                                </div>
-                            </div>
-                            <div class="d-lg-flex align-items-center">
-                                <lord-icon src="https://cdn.lordicon.com/zzjjvkam.json" trigger="hover"
-                                    colors="primary:#109121,secondary:#df3826" style="width:75px;height:75px">
-                                </lord-icon>
-                                <div>
-                                    <p class="fw-bold mb-1">Order</p>
-                                    <p class="fw-bold mb-0">En Route</p>
-                                </div>
-                            </div>
-                            <div class="d-lg-flex align-items-center">
-                                <lord-icon src="https://cdn.lordicon.com/pgirtdfe.json" trigger="hover" stroke="light"
-                                    colors="primary:#000000,secondary:#df3826,tertiary:#df3826,quaternary:#df3826,quinary:#df3826,senary:#646e78,septenary:#0a5c15"
-                                    style="width:75px;height:75px">
-                                </lord-icon>
-                                <div>
-                                    <p class="fw-bold mb-1">Order</p>
-                                    <p class="fw-bold mb-0">Arrived</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+  <script>
+      function fill(star) {
+        
+          star.classList.toggle("bx-star");
+          star.classList.toggle("bxs-star");
+  
+      
+          let stars = document.querySelectorAll(".bx");
+          let index = Array.from(stars).indexOf(star);
+  
+          stars.forEach((el, i) => {
+              if (i <= index) {
+                  el.classList.add("bxs-star");
+                  el.classList.remove("bx-star");
+              } else {
+                  el.classList.add("bx-star");
+                  el.classList.remove("bxs-star");
+              }
+          });
+      }
+  </script>
 
     </main>
 
