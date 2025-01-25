@@ -1,0 +1,492 @@
+/* Main container for the form */
+.col-md-9 {
+    max-width: 500px;
+    width: 100%;
+    background: #f0f1f6;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    margin-right: 320px;
+}
+
+/* Heading and introductory paragraph */
+h2.my-5 {
+    font-size: 2.2rem;
+    color: #2d3a3f;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    animation: slideIn 1s ease-out;
+}
+
+.p1 {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    animation: slideIn 1s ease-out;
+    animation-delay: 0.5s;
+}
+
+/* Modern Design Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+.bod {
+    background: linear-gradient(45deg, #ff6347, #ff4500, #dc143c, #b22222);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 6s infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Styling for labels */
+.form-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in-out forwards;
+    animation-delay: 0.3s;
+    position: relative;
+}
+
+/* Input fields styling */
+input.form-control {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: none;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in-out forwards;
+    position: relative;
+}
+
+input.form-control:focus {
+    border-color: #6200ea;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(98, 0, 234, 0.4);
+}
+
+input.form-control:focus + .form-label {
+    color: #6200ea;
+}
+
+input.form-control::placeholder {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+/* Label's After and Before Pseudo-elements for focus effect */
+.form-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    transition: all 0.3s ease;
+}
+
+input.form-control:focus + .form-label:before {
+    background-color: #6200ea;
+}
+
+/* Checkbox and label styling */
+.form-check-input {
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.form-check-input:hover {
+    transform: scale(1.2);
+}
+
+.form-check-label {
+    color: #666;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.form-check-label:hover {
+    color: #6200ea;
+}
+
+/* Form container */
+.form-container {
+    max-width: 480px;
+    width: 100%;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-container:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 25px;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    input.form-control {
+        padding: 14px 18px;
+        font-size: 0.95rem;
+    }
+
+    .form-check-label {
+        font-size: 0.95rem;
+    }
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Login button styling */
+button.btn-primary {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #6ec1e4, #4facfe);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+    animation: bounceIn 1s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2); /* Subtle shadow effect */
+}
+
+
+button.btn-primary:hover {
+    background: linear-gradient(75deg, #1abc9c, #2c3e50);
+    color: white; /* Ensure text stays white on hover */
+    transform: scale(1.05); /* Slightly scale the button to give a click effect */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Styling for the sign-up link */
+.mt-3 p1 a {
+    color: #6c7cfa;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.mt-3 p1 a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .col-md-9 {
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    h2.my-5 {
+        font-size: 1.8rem;
+    }
+
+    .p1 {
+        font-size: 1rem;
+    }
+
+    input.form-control {
+        font-size: 0.95rem;
+        padding: 16px;
+    }
+
+    button.btn-primary {
+        font-size: 1.1rem;
+        padding: 16px;
+    }
+
+    .form-label {
+        font-size: 1.1rem;
+    }
+}
+
+/* Make it mobile-friendly */
+@media (max-width: 480px) {
+    .col-md-9 {
+        padding: 20px;
+    }
+
+    h2.my-5 {
+        font-size: 1.6rem;
+    }
+
+    .p1 {
+        font-size: 0.9rem;
+    }
+
+    input.form-control {
+        font-size: 0.9rem;
+        padding: 14px;
+    }
+
+    button.btn-primary {
+        font-size: 1.1rem;
+        padding: 14px;
+    }
+}
+
+/* Keyframe Animations */
+
+/* Fade-In effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-In effect */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Bounce-In effect for the button */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Styling the container for social media login options */
+.col-md-3 {
+    max-width: 320px;
+    width: 100%;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    padding: 100px 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    text-align: center;
+    position: fixed;
+    top: 30%; /* Adjust this if you want vertical positioning */
+    right: 15%; /* This fixes the element to the right side of the page */
+    bottom: 30%; /* Ensures the element stretches to the bottom */
+    transform: translateX(50%); /* Centers the element horizontally on the right side */
+    transition: all 0.3s ease;
+}
+
+/* Make it responsive on smaller screens */
+@media (max-width: 1024px) {
+    .col-md-3 {
+        position: relative;
+        bottom: -40px;
+        right: 10%; /* Move it a bit more to the right on smaller screens */
+        left: auto; /* Remove the left offset */
+        max-width: 280px; /* Adjust the width to fit smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        margin-top: 10px;
+        padding: 40px 30px;
+        position: relative;
+        top: 20px; /* Adjust the top distance for smaller screens */
+        right: 5%; /* Move closer to the right side */
+        left: -30%; /* Remove the left offset */
+        max-width: 250px; 
+    }
+
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        right: 0%; /* Align it fully to the right edge of the screen */
+        top: 0px; /* Adjust top to fit better */
+        padding: 60px 20px; /* Reduce padding further */
+        max-width:200px; /* Ensure it fits small screens */
+    }
+}
+
+
+
+/* Container for the social media buttons */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Styling for individual social media buttons */
+button.btn-outline-secondary {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button.btn-outline-secondary:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    transform: translateY(-6px); /* Slight upward movement */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Icon styling inside the button */
+button.btn-outline-secondary img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    
+
+    .p1 {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    button.btn-outline-secondary {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+
+    .d-flex {
+        gap: 20px;
+    }
+}
+
+.input-group {
+    position: relative;
+}
+
+.check{
+ margin: 20px 5px;
+ background-color: gray;
+}
+.input-group-text {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    padding: 0; /* Remove padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px; /* Position the checkbox to the right of the input */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the checkbox */
+    cursor: pointer;
+}
+
+
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow effect on focus */
+}
+
+#show-password-toggle {
+    transform: scale(1.3); /* Increase size of the checkbox */
+    margin: 20px 10px; /* Remove any extra margin around the checkbox */
+}
+
+
+.bo {
+    background: linear-gradient(45deg, #ff8c00, #ffa500, #ff4500, #ff6347);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 6s infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.col-3{
+    width: 50%;
+}

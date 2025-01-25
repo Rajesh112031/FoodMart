@@ -1,0 +1,179 @@
+.article{
+    height: 100%;
+}
+
+.card-body{
+    height: 100%;
+}
+li h6 {
+    text-align: center;      /* Aligns text in the center */
+    font-size: 14px;         /* Sets the font size */
+    font-weight: 500;        /* Makes the text medium weight */
+    color: #333;             /* Sets the text color */
+    margin-top: 5px;         /* Adds a little space between the icon and the text */
+    margin-bottom: 0;        /* Removes bottom margin */
+}
+
+.nav-item {
+    color: white;
+    font-weight: bold;
+    padding: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .nav-item:hover {
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: black;
+    transform: scale(1.1);
+  }
+
+  .body {
+    background: linear-gradient(45deg, #66cdaa, #20b2aa, #3cb371, #006400);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 6s infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#category {
+    background: linear-gradient(45deg, #ff7f50, #e9967a, #cd5c5c, #8b0000);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#brand {
+    background: linear-gradient(45deg, #ff6347, #ff4500, #ff8c00, #f5deb3);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#trending {
+    background: linear-gradient(45deg, #fbc6a0, #f88a6e, #c6f5d1, #fffff0);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#selling {
+    background: linear-gradient(45deg, #ff6347, #ff8c00, #ff9e2f, #f5deb3);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#popular {
+    background: linear-gradient(45deg, #ff6b81, #ff8f68, #ffb347, #fdf4e3);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#just {
+    background: linear-gradient(45deg, #00b3b3, #4682b4, #5f9ea0, #f5f5dc);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#blog {
+    background: linear-gradient(45deg, #e0e0ff, #d8bfd8, #ffb6c1, #ff1493);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding-bottom: 50px;
+}
+
+#people {
+    background: linear-gradient(45deg, #ffb6c1, #ffc0cb, #add8e6, #b0e0e6);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#footer {
+    background: linear-gradient(45deg, #2f4f4f, #708090, #a9a9a9, #b0c4de);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#footer-bottom {
+    background: linear-gradient(45deg, #2f4f4f, #708090, #a9a9a9, #b0c4de);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+}
+
+
+/* Style for the link container */
+.link {
+    display: inline-block;
+    padding: 12px;
+    background-color: #28a745; /* Fresh green background */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: #fff; /* White text for icon */
+    text-decoration: none;
+}
+
+/* Change background color on hover */
+.link:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Slightly increase the size */
+}
+
+/* Style for the SVG icon */
+.link svg {
+    width: 30px;  /* Icon size */
+    height: 20px;
+    fill: white;  /* Icon color */
+    transition: transform 0.3s ease;
+}
+
+/* SVG icon animation on hover */
+.link:hover svg {
+    transform: scale(1.2);  /* Slight zoom-in on hover */
+}
+
+.card{
+    padding: 20px;
+    height: 100%;
+}
+.p1{
+    color: #333;
+}
+
+.p1:hover{
+    color: #4f5c79;
+}
+
+

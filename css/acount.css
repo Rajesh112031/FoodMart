@@ -1,0 +1,562 @@
+/* General Card Styling */
+.card {
+    border: none;  /* No border for a cleaner look */
+    border-radius: 12px;  /* Soft rounded corners */
+    background: linear-gradient(145deg, #f3f4f7, #e2e7ec);  /* Gradient background for the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  /* Softer shadow to give depth */
+    margin-top: 30px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card.show {
+    opacity: 1;
+  }
+  
+  .card-img-top {
+    border-radius: 50%;  /* Make the profile image round */
+    width: 120px;
+    height: 120px;
+    object-fit: cover;  /* Ensure the image fits within the circle */
+    margin: 20px auto;  /* Center the image with margin */
+    border: 4px solid #6c757d;  /* Soft border around the image */
+  }
+  
+  /* Profile Section Styling */
+  .profile {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .card-body {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;  /* Larger font for the name */
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+    color: #6c757d;  /* Softer text color */
+    margin-bottom: 5px;
+  }
+  
+  
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .profile {
+        flex-direction: column;  /* Stack profile card vertically on smaller screens */
+        align-items: center;
+    }
+  
+    .card-img-top {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+  }
+  
+  
+  /* Row and Button Layout */
+  .row {
+    display: flex;  /* Use flexbox for easier alignment */
+    justify-content: space-between;  /* Distribute space evenly between the buttons */
+    margin-bottom: 20px;  /* Add some space below the row */
+  }
+  
+  .col-md-4 {
+    display: flex;
+    justify-content: center;  /* Center the buttons inside the columns */
+  }
+  
+  /* Button Styling */
+  .btn {
+    padding: 12px 25px;  /* Larger button with more padding */
+    border-radius: 30px;  /* Rounded button */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  
+  /* Add to Cart Button */
+  .btn-primary {
+    background-color: #28a745;  /* Fresh green for the primary button */
+    border: none;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;  /* Darker green on hover */
+    transform: translateY(-3px);  /* Button slightly rises on hover */
+  }
+  
+  .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);  /* Blue focus glow */
+  }
+  
+  /* Remove Button */
+  .btn-danger {
+    background-color: #dc3545;  /* Red background */
+    border: none;
+    color: white;
+    margin-right: 20px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;  /* Darker red on hover */
+    transform: translateY(-3px);  /* Button lifts slightly on hover */
+  }
+  
+  .btn-danger:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);  /* Red focus glow */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .col-md-4 {
+        width: 48%;  /* Make the columns take up less width on smaller screens */
+        margin-bottom: 10px;  /* Add spacing between buttons in small viewports */
+    }
+  }
+  
+  
+  /* General Button Styling */
+  .btn-secondary {
+    padding: 12px 24px;  /* Comfortable padding for the button */
+    font-size: 1rem;  /* Standard font size for readability */
+    border-radius: 25px;  /* Smooth rounded edges */
+    color: #ffffff;  /* White text color */
+    background-color: #6c757d;  /* Neutral gray background (Bootstrap secondary color) */
+    border: none;  /* Remove default border */
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+  }
+  
+  /* Hover Effect */
+  .btn-secondary:hover {
+    background-color: #5a6268;  /* Slightly darker gray on hover */
+    color: #ffffff;  /* Ensure the text color remains white */
+    transform: translateY(-2px);  /* Subtle upward movement */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);  /* Enhance shadow on hover */
+  }
+  
+  /* Focus Effect */
+  .btn-secondary:focus {
+    outline: none;  /* Remove default focus outline */
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);  /* Gray glow around the button */
+  }
+  
+  /* Disabled State */
+  .btn-secondary:disabled {
+    background-color: #adb5bd;  /* Lighter gray for disabled state */
+    color: #e9ecef;  /* Softer text color for disabled state */
+    cursor: not-allowed;  /* Indicate the button is not clickable */
+    box-shadow: none;  /* Remove shadow for disabled state */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .btn-secondary {
+        font-size: 0.875rem;  /* Slightly smaller text on smaller screens */
+        padding: 10px 20px;  /* Adjust padding for compact layout */
+    }
+  }
+  
+  
+  /* General Button Styling */
+  .btn-info {
+    padding: 12px 24px;  /* Comfortable padding for better clickability */
+    font-size: 1rem;  /* Standard font size */
+    border-radius: 30px;  /* Smooth, rounded edges */
+    color: #ffffff;  /* White text for contrast */
+    background-color: #17a2b8;  /* Bootstrap info blue */
+    border: none;  /* Remove default border */
+    transition: all 0.3s ease;  /* Smooth transition for hover and focus effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+  }
+  
+  /* Hover Effect */
+  .btn-info:hover {
+    background-color: #138496;  /* Slightly darker blue on hover */
+    transform: translateY(-2px);  /* Subtle lift effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);  /* Enhance shadow for hover */
+  }
+  
+  /* Focus Effect */
+  .btn-info:focus {
+    outline: none;  /* Remove default focus outline */
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);  /* Blue glow around the button */
+  }
+  
+  /* Disabled State */
+  .btn-info:disabled {
+    background-color: #6c757d;  /* Neutral gray background for disabled state */
+    color: #e9ecef;  /* Softer text color for disabled state */
+    cursor: not-allowed;  /* Show the user it’s non-clickable */
+    box-shadow: none;  /* Remove shadow for disabled state */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .btn-info {
+        font-size: 0.875rem;  /* Slightly smaller font size for mobile */
+        padding: 10px 20px;  /* Adjust padding for compact layout */
+    }
+  }
+  
+  /* General Styling for the Order List */
+  .order-list {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd; /* Light gray border for the list */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Prevent items from sticking out of rounded corners */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styling Each List Item */
+  .order-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Comfortable padding */
+    font-size: 1rem; /* Standard font size */
+    background-color: #fff; /* White background */
+    border: none; /* Remove default list item border */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover Effect for List Items */
+  .order-list .list-group-item:hover {
+    background-color: #f8f9fa; /* Light gray background on hover */
+  }
+  
+  /* Styling the Text */
+  .order-list .list-group-item span {
+    color: #333; /* Dark gray for primary text */
+  }
+  
+  .order-list .list-group-item span strong {
+    color: #007bff; /* Blue for order numbers */
+  }
+  
+  /* Styling the Button */
+  .order-list .btn-link {
+    text-decoration: none; /* Remove underline */
+    color: #007bff; /* Blue color for the button */
+    font-weight: bold; /* Make the button stand out */
+    padding: 5px 10px; /* Small padding for clickable area */
+    border-radius: 4px; /* Rounded edges */
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Hover Effect for Button */
+  .order-list .btn-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .order-list .list-group-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .order-list .btn-link {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+  }
+  
+  .body {
+    background:  linear-gradient(45deg, #66cdaa, #20b2aa, #3cb371, #006400);
+    background-size: 400% 400%;
+    animation: gradientShift 6s infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bod {
+    background: linear-gradient(45deg, #fbc6a0, #f88a6e, #c6f5d1, #fffff0);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#footer-bottom, #footer{
+    background: linear-gradient(45deg, #2f4f4f, #708090, #a9a9a9, #b0c4de);
+    color: whitesmoke;
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item {
+    color: white;
+    font-weight: bold;
+    padding: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .nav-item:hover {
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: black;
+    transform: scale(1.1);
+  }
+
+
+  /* Modal Styling */
+.modal-content {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  overflow: hidden; /* Ensures rounded corners apply to all inner content */
+}
+
+/* Modal Header */
+.modal-header {
+  background: linear-gradient(90deg, #4a90e2, #007bff); /* Gradient background */
+  color: #fff;
+  padding: 1.25rem;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Close Button */
+.btn-close {
+  opacity: 0.8;
+}
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* General Modal Styling */
+.modal-content {
+  border: none; /* Remove border for a sleek look */
+  border-radius: 1.5rem; /* More rounded corners for modern appeal */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  overflow: hidden; /* Ensures all content stays within rounded corners */
+  background: #ffffff; /* Bright white for clarity */
+}
+
+/* Modal Header */
+.modal-header {
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Vibrant gradient header */
+  color: #ffffff; /* White text for contrast */
+  padding: 1.5rem; /* Spacious padding */
+  border-bottom: none; /* Remove border for cleaner appearance */
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.25rem; /* Slightly larger font for emphasis */
+}
+
+.btn-close {
+  color: #ffffff; /* White close button for contrast */
+  opacity: 0.9;
+}
+
+.btn-close:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2rem; /* Maintain generous padding */
+  background: #f8fafd; /* Subtle light blue-gray for better focus */
+  border-radius: 1rem; /* Inner card-like rounded corners */
+}
+
+/* Form Labels */
+.form-label {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333333; /* Slightly darker text for readability */
+}
+
+/* Form Input Fields */
+.form-control {
+  border: 1px solid #ddd; /* Light gray borders */
+  border-radius: 1rem; /* Rounded corners for inputs */
+  padding: 0.9rem 1rem; /* Comfortable padding */
+  font-size: 1rem;
+  transition: all 0.3s ease; /* Smooth transitions for interactions */
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Blue highlight for focus */
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Glow effect */
+}
+
+textarea {
+  resize: none; /* Disable resizing */
+  line-height: 1.5; /* Improved readability */
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #007bff, #0056b3); /* Gradient button */
+  border: none;
+  font-weight: bold;
+  padding: 0.85rem 1.75rem;
+  border-radius: 2rem; /* Pill-shaped button */
+  color: #ffffff; /* White text */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #0056b3, #003d80); /* Darker hover effect */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+.btn-primary:active {
+  transform: translateY(0); /* Reset on click */
+  box-shadow: none;
+}
+
+li h6 {
+  text-align: center;      /* Aligns text in the center */
+  font-size: 14px;         /* Sets the font size */
+  font-weight: 500;        /* Makes the text medium weight */
+  color: #333;             /* Sets the text color */
+  margin-top: 5px;         /* Adds a little space between the icon and the text */
+  margin-bottom: 0;        /* Removes bottom margin */
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+  .modal-body {
+    padding: 1.5rem; /* Reduced padding for smaller screens */
+  }
+
+  .btn-primary {
+    text-align: center;
+  }
+
+  .form-control {
+    font-size: 0.95rem; /* Slightly smaller input font size */
+  }
+}
+
+/* Zoom Effect for the Modal */
+.modal.zoom {
+  transform: scale(0.85); /* Start with a smaller size */
+  opacity: 0;             /* Start with the modal hidden */
+  transition: transform 0.4s ease, opacity 0.4s ease; /* Smooth zoom-in transition */
+}
+
+/* When the modal is shown */
+.modal.zoom.show {
+  transform: scale(1);    /* Modal reaches its normal size */
+  opacity: 1;             /* Fade in to full visibility */
+}
+
+/* Optional: Smooth transition for the backdrop */
+.modal-backdrop {
+  opacity: 0;             /* Initially, the backdrop is transparent */
+  transition: opacity 0.3s ease; /* Smooth fade-in/fade-out for the backdrop */
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;           /* Backdrop fades to semi-transparent */
+}
+
+/* General styling for the input field */
+input {
+  font-size: 16px; /* Comfortable font size */
+  padding: 12px 18px; /* Adequate padding for clarity */
+  border: 2px solid #ccc; /* Neutral border color for simplicity */
+  border-radius: 50px; /* Soft, rounded shape for a clean look */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all changes */
+  width: 100%; /* Full width */
+  background-color: #fff; /* White background */
+  color: #333; /* Dark, readable text color */
+  outline: none; /* Remove default outline */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant font */
+}
+
+/* Focus effect: When the user clicks/focuses on the input */
+input:focus {
+  border-color: #0078d4; /* Soft blue border on focus */
+  background-color: #f4f9fe; /* Light blue background on focus */
+  box-shadow: 0 0 8px rgba(0, 120, 212, 0.3); /* Blue glow effect */
+}
+
+/* Placeholder text styling */
+input::placeholder {
+  color: #aaa; /* Soft gray color for the placeholder */
+  font-style: italic; /* Italic style for the placeholder text */
+  opacity: 0.8; /* Slightly transparent placeholder */
+}
+
+/* Hover effect */
+input:hover {
+  border-color: #0078d4; /* Soft blue border when hovered */
+  background-color: #f7faff; /* Slightly darker background when hovered */
+}
+
+/* Optional: Adding a subtle shadow for depth */
+input {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Active input styling to give it a 'pressed' effect when focused */
+input:active {
+  transform: translateY(1px); /* Slightly lower the input on click */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow when active */
+}
+
+.sec{
+  background-color: whitesmoke;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;  /* Stack buttons vertically */
+    align-items: center;  /* Center the buttons horizontally */
+    margin-bottom: 10px;  /* Adjust space below the row */
+  }
+}
+
+body {
+  letter-spacing: 0.03em;
+}
+h5{
+  color: #000;
+}
